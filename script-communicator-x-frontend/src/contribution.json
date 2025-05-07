@@ -1,0 +1,12 @@
+{
+  "applicationNodes": [
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "script-communicator-application.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "funh-script-communicator-x-script-communicator-application"
+    }
+  ],
+  "programNodes": [],
+  "smartSkills": []
+}

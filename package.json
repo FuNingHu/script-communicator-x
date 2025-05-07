@@ -1,0 +1,34 @@
+{
+  "name": "script-communicator-x",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "cd script-communicator-x-frontend && npm run start",
+    "install-frontend": "cd script-communicator-x-frontend && npm install",
+    "install-backend": "cd script-communicator-x-backend && npm install",
+    "lint": "cd script-communicator-x-frontend && npm run lint",
+    "postinstall": "npm run install-frontend && npm run install-backend",
+    "prebuild": "npm run clean-dist && npm run clean-target",
+    "build-arm": "export ARCH=linux/arm64 && npm run build",
+    "build": "npm run build-backend && npm run build-frontend",
+    "postbuild": "npm run package",
+    "build-backend": "npm run build --prefix script-communicator-x-backend",
+    "build-frontend": "npm run build --prefix script-communicator-x-frontend",
+    "prepackage": "mkdir dist && npm run copy-backend && npm run copy-frontend && npm run copy-manifest && npm run copy-license && npm run write-requirements",
+    "package": "package-urcap dist target",
+    "copy-backend": "cpy \"script-communicator-x-backend/dist/*\" dist/script-communicator-x-backend",
+    "copy-frontend": "cpy \"script-communicator-x-frontend/**/*\" ../../dist --parents --cwd=script-communicator-x-frontend/dist",
+    "copy-manifest": "cpy manifest.yaml dist",
+    "write-requirements": "write-ur-packages ./script-communicator-x-frontend/package.json dist/requirements.txt",
+    "copy-license": "cpy LICENSE dist",
+    "clean-dist": "rimraf dist",
+    "clean-target": "rimraf target",
+    "install-urcap": "install-urcap 'target/script-communicator-x*.urcapx'",
+    "delete-urcap": "delete-urcap funh script-communicator-x"
+  },
+  "private": true,
+  "devDependencies": {
+    "@universal-robots/urcap-utils": "1.2.1",
+    "rimraf": "3.0.2",
+    "cpy-cli": "3.1.1"
+  }
+}
