@@ -1,0 +1,33 @@
+metadata:
+  vendorID: "funh"
+  urcapID: "script-communicator-x"
+  version: 1.0.0
+  vendorName: "funh"
+  urcapName: "Script Communicator X"
+  contactInfo: Energivej 51, 5260 Odense S, Denmark
+  description: Example demonistrating use of USB as a storage inside the container
+  copyright: Copyright (c) 2009-2025 Universal Robots. All rights reserved
+  licenseType: Sample license
+
+artifacts:
+  webArchives:
+  - id: script-communicator-x-frontend
+    folder: script-communicator-x-frontend
+  containers:
+  - id: script-communicator-x-backend
+    image: script-communicator-x-backend:latest
+    exposePorts:
+      - id: tcp_socket
+        containerPort: 50066
+        hostPort: 50066
+        protocol: tcp
+        externallyAvailable: true
+    ingress:
+      - id: xmlrpc
+        containerPort: 50052
+        protocol: http
+        proxyUrl: /
+    
+      
+    services:
+      - service: urcontrol-secondary

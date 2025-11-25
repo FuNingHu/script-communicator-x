@@ -1,0 +1,10 @@
+{
+  "application": {
+    "nodes": {
+      "funh-script-communicator-x-script-communicator-application": {
+        "title": "Script Communicator Application",
+        "supportiveText": "Script Communicator Application - Supportive Text"
+      }
+    }
+  }
+}

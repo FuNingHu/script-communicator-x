@@ -1,0 +1,19 @@
+<div *ngIf="applicationNode" class="component">
+    
+    <div class="section">
+        <h3>Script Communicator Sample:</h3>
+        <ur-dialog-input
+            style="margin-bottom: 20px;"
+            [type]="'text'"
+            [disabled]="false"
+            [label]="'Popup Text'"
+            [message]="'help text'"
+            [validators]="[null]"
+            [validation]="{required: true, min:1, max:255}"
+            (valueChanged)="applicationNode.popupText = $event.toString(); saveNode()"
+            [value]="applicationNode.popupText"
+            class="ur-dialog-input-width"
+        ></ur-dialog-input>
+        <p>Actual z-Pose: <span style="color: red;">{{zPose}}</span></p>
+    </div>
+</div>
