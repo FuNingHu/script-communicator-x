@@ -58,10 +58,10 @@ def get_actual_joint_positions():
             cmd.setAsSecondaryProgram()
             cmd.appendLine("script_com = rpc_factory(\"xmlrpc\",\"http://servicegateway/funh/script-communicator-x/script-communicator-x-backend/xmlrpc/\")")
             cmd.appendLine("pose = get_actual_tcp_pose()")
-            cmd.appendLine("z_value = pose[2]")
-            # cmd.appendLine("shared var_shar")
-            cmd.appendLine("script_com.set_return_value(z_value)")
-            # cmd.appendLine("script_com.set_return_value(var_shar)")
+            # cmd.appendLine("z_value = pose[2]")
+            cmd.appendLine("shared var_shar")
+            # cmd.appendLine("script_com.set_return_value(z_value)") #uncomment this line to return the z-value
+            cmd.appendLine("script_com.set_return_value(var_shar)") #uncomment this line to return the shared variable
             sender.send_script_command(str(cmd))
 
             # wait 0.01 second
