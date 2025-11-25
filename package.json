@@ -22,6 +22,7 @@
     "write-sbom": "write-ur-packages ./script-communicator-x-frontend/package-lock.json dist",
     "clean-dist": "rimraf dist",
     "clean-target": "rimraf target",
+    "clean-urcap": "rimraf script-communicator-x-backend/package-lock.json && rimraf script-communicator-x-backend/node_modules && rimraf script-communicator-x-frontend/package-lock.json && rimraf script-communicator-x-frontend/node_modules && rimraf package-lock.json && rimraf node_modules",
     "install-urcap": "install-urcap 'target/script-communicator-x*.urcapx' '../../manifest-spec-19.6.12.json'",
     "delete-urcap": "delete-urcap funh script-communicator-x",
     "validate-manifest": "validate-manifest 'manifest.yaml' '../../manifest-spec-19.6.12.json'"
