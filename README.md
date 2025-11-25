@@ -3,7 +3,7 @@
 Description: Sample tool offers an approach to send urscript over Primary/Secondary port and retrive value from URScript runtime.
 It has been build and tested on SDK dev container 0.18.90
 
-Author: FuNing Hu<funh@universal-robots.com>
+Author: FuNing Hu <funh@universal-robots.com>
 Last modified date: 2025 November 25.
 Place: Shanghai
 
@@ -25,8 +25,9 @@ To deploy the contribution to the simulator type:
 
 ### Clean dependancy
 To clean current dependencies which were specified in sdk during project creation.
+
 `$ npm run clean-urcap`
-### after this command, it will need rerun `$ npm install` to add new dependencies that are elaborated in <package.json> accordingly.
+# after this command, it will need rerun `$ npm install` to add new dependencies that are elaborated in <package.json> accordingly.
 
 
 
