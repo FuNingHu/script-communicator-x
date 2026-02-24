@@ -11,7 +11,7 @@ import { URCAP_ID, VENDOR_ID } from 'src/generated/contribution-constants';
 // factory is required
 const createApplicationNode = (): OptionalPromise<ScriptCommunicatorApplicationNode> => ({
     type: 'funh-script-communicator-x-script-communicator-application',    // type is required
-    version: '1.0.0',     // version is required
+    version: '1.0.0',   // version is required
     popupText: 'customizedText'
 });
 
