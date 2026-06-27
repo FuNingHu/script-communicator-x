@@ -1,25 +1,54 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Merged root ignore: applies to the root and all sub-projects
+# (script-communicator-x-backend, script-communicator-x-frontend).
+
 # Dependencies
 node_modules/
+npm/
+node/
 package-lock.json
 
-# Build output
+# Compiled output / build artifacts
 dist/
 target/
+tmp/
+out-tsc/
 *.tar.gz
+# Only exists if Bazel was run
+bazel-out/
 
-# IDE
-.vscode/
+# Profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 *.swp
 *.swo
 
-# OS
-.DS_Store
-Thumbs.db
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
-# Logs
-*.log
-npm-debug.log*
+# Angular
+.angular/
+
+# Misc
+.sass-cache/
+connect.lock
+coverage/
+libpeerconnection.log
+typings/
 
 # Python
 __pycache__/
@@ -31,3 +60,12 @@ __pycache__/
 .env
 .env.local
 
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log
+testem.log
+
+# System files
+.DS_Store
+Thumbs.db
