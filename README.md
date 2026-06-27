@@ -11,7 +11,6 @@ Built and tested on the PolyScopeX SDK dev container **0.20.49**.
 
 | | |
 |------------------|-----------------------------------------|
-| **Author**       | FuNing Hu &lt;funh@universal-robots.com&gt; |
 | **Created**      | 2025-Nov-25                             |
 | **Last updated** | 2026-Jun-27                             |
 | **Place**        | Shanghai                                |
