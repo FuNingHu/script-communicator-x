@@ -89,3 +89,11 @@ value and returns it to the UI.
 
 Get more help from the included SDK documentation, or contact
 FuNing Hu &lt;funh@universal-robots.com&gt;.
+
+---
+
+## License
+
+Released under the **MIT License**. The software is provided "as is", without warranty of
+any kind. You are free to use, copy, modify, and distribute it, provided the original
+copyright and license notice are retained. See the full text in [LICENSE](LICENSE).

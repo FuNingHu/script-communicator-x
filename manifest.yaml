@@ -6,8 +6,8 @@ metadata:
   urcapName: "Script Communicator X"
   contactInfo: Energivej 51, 5260 Odense S, Denmark
   description: Example demonistrating use of USB as a storage inside the container
-  copyright: Copyright (c) 2009-2025 Universal Robots. All rights reserved
-  licenseType: Sample license
+  copyright: Copyright (c) 2026 FuNing Hu
+  licenseType: MIT
 
 artifacts:
   webArchives:
