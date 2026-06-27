@@ -1,10 +1,11 @@
 # Angular contribution
 
 Description: Sample tool offers an approach to send urscript over Primary/Secondary port and retrive value from URScript runtime.
-It has been build and tested on SDK dev container 0.18.90
+It has been build and tested on SDK dev container 0.20.49
 
 Author: FuNing Hu <funh@universal-robots.com>
-Last modified date: 2025 November 25.
+Last modified date: 2026 Jun. 27
+First created date: 2025 Nov. 25
 Place: Shanghai
 
 

@@ -10,7 +10,9 @@ package-lock.json
 
 # Compiled output / build artifacts
 dist/
-target/
+# ignore everything in target/ except the packaged URCapX bundle
+target/*
+!target/*.urcapx
 tmp/
 out-tsc/
 *.tar.gz
